@@ -1,0 +1,9 @@
+C:\GitRepos\NewRaceApp\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\GitRepos\NewRaceApp\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\GitRepos\NewRaceApp\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\GitRepos\NewRaceApp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\GitRepos\NewRaceApp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\GitRepos\NewRaceApp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\GitRepos\NewRaceApp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\GitRepos\NewRaceApp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\GitRepos\NewRaceApp\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
