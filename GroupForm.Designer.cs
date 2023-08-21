@@ -135,6 +135,7 @@
             this.buttonEdit.TabIndex = 1;
             this.buttonEdit.Text = "Редактировать";
             this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonDelete
             // 
@@ -153,6 +154,7 @@
             this.buttonClose.TabIndex = 3;
             this.buttonClose.Text = "Закрыть";
             this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // buttonDeleteAll
             // 
@@ -204,7 +206,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.DataGridView dataGridViewGroup;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Label label1;
@@ -213,5 +214,6 @@
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonEdit;
+        public System.Windows.Forms.DataGridView dataGridViewGroup;
     }
 }

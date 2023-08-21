@@ -29,27 +29,28 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.checkBoxTeam = new System.Windows.Forms.CheckBox();
+            this.labelItemTo = new System.Windows.Forms.Label();
+            this.labelItemFrom = new System.Windows.Forms.Label();
+            this.textBoxTo = new System.Windows.Forms.TextBox();
+            this.textBoxFrom = new System.Windows.Forms.TextBox();
+            this.textBoxNameFull = new System.Windows.Forms.TextBox();
+            this.textBoxNameShort = new System.Windows.Forms.TextBox();
+            this.radioButtonFemail = new System.Windows.Forms.RadioButton();
+            this.radioButtonMale = new System.Windows.Forms.RadioButton();
+            this.labelTextTo = new System.Windows.Forms.Label();
+            this.labelTextFrom = new System.Windows.Forms.Label();
+            this.labelTo = new System.Windows.Forms.Label();
+            this.labelFrom = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonOk = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -59,193 +60,212 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 450);
+            this.panel1.Size = new System.Drawing.Size(639, 280);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 410);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 40);
-            this.panel2.TabIndex = 0;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.textBox4);
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Controls.Add(this.radioButton2);
-            this.panel3.Controls.Add(this.radioButton1);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.checkBoxTeam);
+            this.panel3.Controls.Add(this.labelItemTo);
+            this.panel3.Controls.Add(this.labelItemFrom);
+            this.panel3.Controls.Add(this.textBoxTo);
+            this.panel3.Controls.Add(this.textBoxFrom);
+            this.panel3.Controls.Add(this.textBoxNameFull);
+            this.panel3.Controls.Add(this.textBoxNameShort);
+            this.panel3.Controls.Add(this.radioButtonFemail);
+            this.panel3.Controls.Add(this.radioButtonMale);
+            this.panel3.Controls.Add(this.labelTextTo);
+            this.panel3.Controls.Add(this.labelTextFrom);
+            this.panel3.Controls.Add(this.labelTo);
+            this.panel3.Controls.Add(this.labelFrom);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(800, 410);
+            this.panel3.Size = new System.Drawing.Size(639, 240);
             this.panel3.TabIndex = 1;
             // 
-            // label1
+            // checkBoxTeam
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(53, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.checkBoxTeam.AutoSize = true;
+            this.checkBoxTeam.Location = new System.Drawing.Point(224, 180);
+            this.checkBoxTeam.Name = "checkBoxTeam";
+            this.checkBoxTeam.Size = new System.Drawing.Size(88, 17);
+            this.checkBoxTeam.TabIndex = 14;
+            this.checkBoxTeam.Text = "Для команд";
+            this.checkBoxTeam.UseVisualStyleBackColor = true;
+            // 
+            // labelItemTo
+            // 
+            this.labelItemTo.AutoSize = true;
+            this.labelItemTo.Location = new System.Drawing.Point(54, 134);
+            this.labelItemTo.Name = "labelItemTo";
+            this.labelItemTo.Size = new System.Drawing.Size(19, 13);
+            this.labelItemTo.TabIndex = 13;
+            this.labelItemTo.Text = "00";
+            // 
+            // labelItemFrom
+            // 
+            this.labelItemFrom.AutoSize = true;
+            this.labelItemFrom.Location = new System.Drawing.Point(199, 134);
+            this.labelItemFrom.Name = "labelItemFrom";
+            this.labelItemFrom.Size = new System.Drawing.Size(19, 13);
+            this.labelItemFrom.TabIndex = 12;
+            this.labelItemFrom.Text = "00";
+            // 
+            // textBoxTo
+            // 
+            this.textBoxTo.Location = new System.Drawing.Point(162, 81);
+            this.textBoxTo.Name = "textBoxTo";
+            this.textBoxTo.Size = new System.Drawing.Size(100, 20);
+            this.textBoxTo.TabIndex = 11;
+            this.textBoxTo.TextChanged += new System.EventHandler(this.textBoxTo_TextChanged);
+            this.textBoxTo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxTo_KeyDown);
+            // 
+            // textBoxFrom
+            // 
+            this.textBoxFrom.Location = new System.Drawing.Point(15, 81);
+            this.textBoxFrom.Name = "textBoxFrom";
+            this.textBoxFrom.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFrom.TabIndex = 10;
+            this.textBoxFrom.TextChanged += new System.EventHandler(this.textBoxFrom_TextChanged);
+            this.textBoxFrom.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxFrom_KeyDown);
+            // 
+            // textBoxNameFull
+            // 
+            this.textBoxNameFull.Location = new System.Drawing.Point(224, 25);
+            this.textBoxNameFull.Name = "textBoxNameFull";
+            this.textBoxNameFull.Size = new System.Drawing.Size(390, 20);
+            this.textBoxNameFull.TabIndex = 9;
+            this.textBoxNameFull.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxNameFull_KeyDown);
+            // 
+            // textBoxNameShort
+            // 
+            this.textBoxNameShort.Location = new System.Drawing.Point(12, 25);
+            this.textBoxNameShort.Name = "textBoxNameShort";
+            this.textBoxNameShort.Size = new System.Drawing.Size(182, 20);
+            this.textBoxNameShort.TabIndex = 8;
+            this.textBoxNameShort.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxNameShort_KeyDown);
+            // 
+            // radioButtonFemail
+            // 
+            this.radioButtonFemail.AutoSize = true;
+            this.radioButtonFemail.Location = new System.Drawing.Point(117, 179);
+            this.radioButtonFemail.Name = "radioButtonFemail";
+            this.radioButtonFemail.Size = new System.Drawing.Size(77, 17);
+            this.radioButtonFemail.TabIndex = 7;
+            this.radioButtonFemail.TabStop = true;
+            this.radioButtonFemail.Text = "Женщины";
+            this.radioButtonFemail.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonMale
+            // 
+            this.radioButtonMale.AutoSize = true;
+            this.radioButtonMale.Location = new System.Drawing.Point(30, 179);
+            this.radioButtonMale.Name = "radioButtonMale";
+            this.radioButtonMale.Size = new System.Drawing.Size(72, 17);
+            this.radioButtonMale.TabIndex = 6;
+            this.radioButtonMale.TabStop = true;
+            this.radioButtonMale.Text = "Мужчины";
+            this.radioButtonMale.UseVisualStyleBackColor = true;
+            // 
+            // labelTextTo
+            // 
+            this.labelTextTo.AutoSize = true;
+            this.labelTextTo.Location = new System.Drawing.Point(27, 117);
+            this.labelTextTo.Name = "labelTextTo";
+            this.labelTextTo.Size = new System.Drawing.Size(35, 13);
+            this.labelTextTo.TabIndex = 5;
+            this.labelTextTo.Text = "label6";
+            // 
+            // labelTextFrom
+            // 
+            this.labelTextFrom.AutoSize = true;
+            this.labelTextFrom.Location = new System.Drawing.Point(176, 117);
+            this.labelTextFrom.Name = "labelTextFrom";
+            this.labelTextFrom.Size = new System.Drawing.Size(35, 13);
+            this.labelTextFrom.TabIndex = 4;
+            this.labelTextFrom.Text = "label5";
+            // 
+            // labelTo
+            // 
+            this.labelTo.AutoSize = true;
+            this.labelTo.Location = new System.Drawing.Point(159, 65);
+            this.labelTo.Name = "labelTo";
+            this.labelTo.Size = new System.Drawing.Size(35, 13);
+            this.labelTo.TabIndex = 3;
+            this.labelTo.Text = "label4";
+            // 
+            // labelFrom
+            // 
+            this.labelFrom.AutoSize = true;
+            this.labelFrom.Location = new System.Drawing.Point(12, 65);
+            this.labelFrom.Name = "labelFrom";
+            this.labelFrom.Size = new System.Drawing.Size(35, 13);
+            this.labelFrom.TabIndex = 2;
+            this.labelFrom.Text = "label3";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(374, 48);
+            this.label2.Location = new System.Drawing.Point(221, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(129, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.label2.Text = "Полное название групы";
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(56, 126);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(145, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Короткое название группы";
             // 
-            // label4
+            // panel2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(377, 113);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            this.panel2.Controls.Add(this.buttonCancel);
+            this.panel2.Controls.Add(this.buttonOk);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 240);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(639, 40);
+            this.panel2.TabIndex = 0;
             // 
-            // label5
+            // buttonCancel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(59, 185);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
+            this.buttonCancel.Location = new System.Drawing.Point(517, 3);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(110, 30);
+            this.buttonCancel.TabIndex = 1;
+            this.buttonCancel.Text = "Отмена";
+            this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
-            // label6
+            // buttonOk
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(380, 184);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "label6";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(47, 264);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(187, 264);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(532, 7);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(662, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(56, 79);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 8;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(383, 78);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 9;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(56, 156);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 10;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(383, 147);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 11;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(58, 214);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "label7";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(379, 214);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "label8";
+            this.buttonOk.Location = new System.Drawing.Point(401, 3);
+            this.buttonOk.Name = "buttonOk";
+            this.buttonOk.Size = new System.Drawing.Size(110, 30);
+            this.buttonOk.TabIndex = 0;
+            this.buttonOk.Text = "Ок";
+            this.buttonOk.UseVisualStyleBackColor = true;
+            this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 
             // AddGroupForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(639, 280);
             this.Controls.Add(this.panel1);
             this.Name = "AddGroupForm";
-            this.Text = "AddGroupForm";
+            this.Text = "Добавить группу";
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -255,21 +275,22 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelItemTo;
+        private System.Windows.Forms.Label labelItemFrom;
+        private System.Windows.Forms.TextBox textBoxTo;
+        private System.Windows.Forms.TextBox textBoxFrom;
+        private System.Windows.Forms.TextBox textBoxNameFull;
+        private System.Windows.Forms.TextBox textBoxNameShort;
+        private System.Windows.Forms.RadioButton radioButtonFemail;
+        private System.Windows.Forms.RadioButton radioButtonMale;
+        private System.Windows.Forms.Label labelTextTo;
+        private System.Windows.Forms.Label labelTextFrom;
+        private System.Windows.Forms.Label labelTo;
+        private System.Windows.Forms.Label labelFrom;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Button buttonOk;
+        private System.Windows.Forms.CheckBox checkBoxTeam;
     }
 }
