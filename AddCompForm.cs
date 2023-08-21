@@ -1,5 +1,6 @@
 ﻿using RaceApp;
 using System;
+using System.Linq;
 using System.Runtime.Remoting.Contexts;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Windows.Forms;
@@ -21,7 +22,7 @@ namespace WindowsFormsApp1
             {
                 using (var context = new MyDbContext())
                 {
-                    var comp = context.Set<Comp>().Find(compForm.dataGridViewComp.CurrentRow.Cells["Id"].Value);
+                    var comp = context.Set<Comp>().Find(compForm.dataGridViewComp.CurrentRow.Cells["Id"].Value);                    
 
                     dateTimePickerComp.Value = comp.Date;
                     textBoxName.Text = comp.Name;
@@ -47,9 +48,7 @@ namespace WindowsFormsApp1
             else
             {
                 dateTimePickerComp.Value = DateTime.Now;
-            }
-            
-            
+            }      
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
@@ -76,13 +75,23 @@ namespace WindowsFormsApp1
                 var orbitr = "";
                 var secretar = "";
                 int timeReadTag = 1;
-
-                if (Convert.ToInt32(textBoxTimeReadTags.Text) > 0)
+                
+                if (textBoxTimeReadTags.Text != "")
                 {
-                    timeReadTag = Convert.ToInt32(textBoxTimeReadTags.Text);
+                    if (int.TryParse(textBoxTimeReadTags.Text, out int result))
+                    {
+                        if (result > 0)
+                        {
+                            timeReadTag = result;
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Введите целое положительное число");
+                        return;
+                    }
                 }
-
-
+                
                 if (textBoxPlace.Text != "")
                 {
                     place = textBoxPlace.Text;
@@ -105,12 +114,32 @@ namespace WindowsFormsApp1
 
                 if (checkBoxBiathon.Checked)
                 {
-                    timePenalty = Convert.ToInt32(textBoxTimePenalty.Text);
-                    if (timePenalty < 0)
+                    if (textBoxTimePenalty.Text == "")
                     {
                         timePenalty = 0;
                     }
+                    else
+                    {
+                        if (int.TryParse(textBoxTimePenalty.Text, out int resultpenalty))
+                        {
+                            if (resultpenalty < 0)
+                            {
+                                timePenalty = 0;
+                            }
+                            else
+                            {
+                                timePenalty = resultpenalty;
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Введите целое положительное число");
+                            return;
+                        }
+                    }
+                                      
                 }
+
                 if (!compForm.toEdit)
                 {
                     using (var context = new MyDbContext())

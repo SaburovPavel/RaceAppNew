@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1;
 
 namespace RaceApp
 {
@@ -32,6 +33,12 @@ namespace RaceApp
         {
             CompForm compForm = new CompForm();
             compForm.ShowDialog();
+        }
+
+        private void buttonGroups_Click(object sender, EventArgs e)
+        {
+            GroupForm groupForm = new GroupForm();
+            groupForm.ShowDialog();
         }
     }
 }

@@ -43,3 +43,6 @@ C:\GitRepos\NewRaceApp\RaceAppNew\obj\Debug\RaceApp.csproj.CoreCompileInputs.cac
 C:\GitRepos\NewRaceApp\RaceAppNew\obj\Debug\RaceApp.csproj.CopyComplete
 C:\GitRepos\NewRaceApp\RaceAppNew\obj\Debug\WindowsFormsApp1.exe
 C:\GitRepos\NewRaceApp\RaceAppNew\obj\Debug\WindowsFormsApp1.pdb
+C:\GitRepos\NewRaceApp\RaceAppNew\obj\Debug\WindowsFormsApp1.GroupForm.resources
+C:\GitRepos\NewRaceApp\RaceAppNew\obj\Debug\WindowsFormsApp1.TwoButtonForm.resources
+C:\GitRepos\NewRaceApp\RaceAppNew\obj\Debug\WindowsFormsApp1.AddGroupForm.resources

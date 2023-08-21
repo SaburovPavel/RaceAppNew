@@ -62,6 +62,12 @@
     <Compile Include="AddCompForm.Designer.cs">
       <DependentUpon>AddCompForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddGroupForm.Designer.cs">
+      <DependentUpon>AddGroupForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Comp.cs" />
     <Compile Include="CompForm.cs">
       <SubType>Form</SubType>
@@ -73,6 +79,12 @@
     <Compile Include="Distance.cs" />
     <Compile Include="EmailToSend.cs" />
     <Compile Include="Group.cs" />
+    <Compile Include="GroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupForm.Designer.cs">
+      <DependentUpon>GroupForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,12 +99,24 @@
     <Compile Include="Race.cs" />
     <Compile Include="RaceTeam.cs" />
     <Compile Include="Team.cs" />
+    <Compile Include="TwoButtonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TwoButtonForm.Designer.cs">
+      <DependentUpon>TwoButtonForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <EmbeddedResource Include="AddCompForm.resx">
       <DependentUpon>AddCompForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddGroupForm.resx">
+      <DependentUpon>AddGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CompForm.resx">
       <DependentUpon>CompForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupForm.resx">
+      <DependentUpon>GroupForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -106,6 +130,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TwoButtonForm.resx">
+      <DependentUpon>TwoButtonForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

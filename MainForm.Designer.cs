@@ -31,6 +31,11 @@
             this.buttonComp = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonSettings = new System.Windows.Forms.Button();
+            this.buttonTiming = new System.Windows.Forms.Button();
+            this.buttonTeams = new System.Windows.Forms.Button();
+            this.buttonDistance = new System.Windows.Forms.Button();
+            this.buttonGroups = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -57,12 +62,67 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.buttonSettings);
+            this.panel2.Controls.Add(this.buttonTiming);
+            this.panel2.Controls.Add(this.buttonTeams);
+            this.panel2.Controls.Add(this.buttonDistance);
+            this.panel2.Controls.Add(this.buttonGroups);
             this.panel2.Controls.Add(this.buttonComp);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(237, 450);
             this.panel2.TabIndex = 1;
+            // 
+            // buttonSettings
+            // 
+            this.buttonSettings.Location = new System.Drawing.Point(12, 405);
+            this.buttonSettings.Name = "buttonSettings";
+            this.buttonSettings.Size = new System.Drawing.Size(213, 34);
+            this.buttonSettings.TabIndex = 2;
+            this.buttonSettings.Text = "Настройки ридеров";
+            this.buttonSettings.UseVisualStyleBackColor = true;
+            // 
+            // buttonTiming
+            // 
+            this.buttonTiming.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonTiming.Location = new System.Drawing.Point(12, 249);
+            this.buttonTiming.Name = "buttonTiming";
+            this.buttonTiming.Size = new System.Drawing.Size(213, 34);
+            this.buttonTiming.TabIndex = 2;
+            this.buttonTiming.Text = "Тайминг";
+            this.buttonTiming.UseVisualStyleBackColor = true;
+            // 
+            // buttonTeams
+            // 
+            this.buttonTeams.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonTeams.Location = new System.Drawing.Point(12, 192);
+            this.buttonTeams.Name = "buttonTeams";
+            this.buttonTeams.Size = new System.Drawing.Size(213, 34);
+            this.buttonTeams.TabIndex = 2;
+            this.buttonTeams.Text = "Команды";
+            this.buttonTeams.UseVisualStyleBackColor = true;
+            // 
+            // buttonDistance
+            // 
+            this.buttonDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDistance.Location = new System.Drawing.Point(12, 134);
+            this.buttonDistance.Name = "buttonDistance";
+            this.buttonDistance.Size = new System.Drawing.Size(213, 34);
+            this.buttonDistance.TabIndex = 2;
+            this.buttonDistance.Text = "Дистанции";
+            this.buttonDistance.UseVisualStyleBackColor = true;
+            // 
+            // buttonGroups
+            // 
+            this.buttonGroups.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonGroups.Location = new System.Drawing.Point(12, 77);
+            this.buttonGroups.Name = "buttonGroups";
+            this.buttonGroups.Size = new System.Drawing.Size(213, 34);
+            this.buttonGroups.TabIndex = 2;
+            this.buttonGroups.Text = "Группы";
+            this.buttonGroups.UseVisualStyleBackColor = true;
+            this.buttonGroups.Click += new System.EventHandler(this.buttonGroups_Click);
             // 
             // MainForm
             // 
@@ -83,6 +143,11 @@
         private System.Windows.Forms.Button buttonComp;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button buttonDistance;
+        private System.Windows.Forms.Button buttonGroups;
+        private System.Windows.Forms.Button buttonSettings;
+        private System.Windows.Forms.Button buttonTiming;
+        private System.Windows.Forms.Button buttonTeams;
     }
 }
 

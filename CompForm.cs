@@ -69,6 +69,8 @@ namespace RaceApp
                 dataGridViewComp.DataSource = comps.ToList();
                 dataGridViewComp.Columns["Id"].Visible = false;
                 dataGridViewComp.Columns["TimeIntervalStart"].Visible = false;
+
+                comps.ToList().Select(item => item.Date == DateTime.Now && item.TimePenalty > 30);
             }
         }
 
