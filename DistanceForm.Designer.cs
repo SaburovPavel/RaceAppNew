@@ -40,13 +40,13 @@
             this.buttonClose = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewDistance = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDistance)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -94,7 +94,7 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.dataGridView1);
+            this.panel5.Controls.Add(this.dataGridViewDistance);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
@@ -149,7 +149,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(70, 12);
+            this.textBox1.Location = new System.Drawing.Point(77, 12);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(158, 22);
             this.textBox1.TabIndex = 0;
@@ -159,23 +159,23 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 16);
+            this.label1.Size = new System.Drawing.Size(59, 16);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Филтр:";
+            this.label1.Text = "Фильтр:";
             // 
-            // dataGridView1
+            // dataGridViewDistance
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(996, 499);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridViewDistance.AllowUserToAddRows = false;
+            this.dataGridViewDistance.AllowUserToDeleteRows = false;
+            this.dataGridViewDistance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDistance.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewDistance.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewDistance.Name = "dataGridViewDistance";
+            this.dataGridViewDistance.ReadOnly = true;
+            this.dataGridViewDistance.RowHeadersWidth = 51;
+            this.dataGridViewDistance.RowTemplate.Height = 24;
+            this.dataGridViewDistance.Size = new System.Drawing.Size(996, 499);
+            this.dataGridViewDistance.TabIndex = 0;
             // 
             // DistanceForm
             // 
@@ -192,7 +192,7 @@
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDistance)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -209,7 +209,7 @@
         private System.Windows.Forms.Button buttonEdit;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonClose;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewDistance;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
     }

@@ -15,11 +15,22 @@ namespace RaceApp
         public DistanceForm()
         {
             InitializeComponent();
+
+            dataGridViewDistance.SetDoubleBuffered(true);
+        }
+
+        void RefreshDistForm()
+        {
+            using (var context  = new MyDbContext())
+            {
+                var distance = context.Distances.Select(item => new { item.Name, item.LenthLap, item.HighLap });
+                var results = distance.ToList();
+            }
         }
 
         private void DistanceForm_Load(object sender, EventArgs e)
         {
-
+            RefreshDistForm();
         }
     }
 }
