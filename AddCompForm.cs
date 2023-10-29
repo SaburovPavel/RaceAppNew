@@ -1,11 +1,8 @@
-﻿using RaceApp;
-using System;
+﻿using System;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
-using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace RaceApp
 {
     public partial class AddCompForm : Form
     {

@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
 using System.Drawing;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp1;
+
 
 namespace RaceApp
 {
@@ -94,7 +88,7 @@ namespace RaceApp
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-            if (dataGridViewComp.Rows.Count == 0)
+            if (CheckDataGrid.CheckDataGridForEmty(dataGridViewComp))
             {
                 return;
             }
@@ -126,9 +120,8 @@ namespace RaceApp
         }
         private void EditComp()
         {
-            if (dataGridViewComp.Rows.Count == 0)
+            if (CheckDataGrid.CheckDataGridForEmty(dataGridViewComp))
             {
-                MessageBox.Show("Редактировать нечего!!!");
                 return;
             }
 

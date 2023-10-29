@@ -7,8 +7,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{4E6D67CE-8808-4C7A-A752-DA977C9053A5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WindowsFormsApp1</RootNamespace>
-    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <RootNamespace>RaceApp</RootNamespace>
+    <AssemblyName>RaceApp</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -68,6 +68,7 @@
     <Compile Include="AddGroupForm.Designer.cs">
       <DependentUpon>AddGroupForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CheckDataGridForEmpty.cs" />
     <Compile Include="Comp.cs" />
     <Compile Include="CompForm.cs">
       <SubType>Form</SubType>
@@ -77,6 +78,12 @@
     </Compile>
     <Compile Include="CompStart.cs" />
     <Compile Include="Distance.cs" />
+    <Compile Include="DistanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DistanceForm.Designer.cs">
+      <DependentUpon>DistanceForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="EmailToSend.cs" />
     <Compile Include="Group.cs" />
     <Compile Include="GroupForm.cs">
@@ -92,6 +99,11 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MyDbContext.cs" />
+    <Compile Include="RaceDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RaceDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SqlTableManager.cs" />
     <Compile Include="PassChip.cs" />
     <Compile Include="Program.cs" />
@@ -115,6 +127,9 @@
     <EmbeddedResource Include="CompForm.resx">
       <DependentUpon>CompForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DistanceForm.resx">
+      <DependentUpon>DistanceForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GroupForm.resx">
       <DependentUpon>GroupForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +144,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="TwoButtonForm.resx">
       <DependentUpon>TwoButtonForm.cs</DependentUpon>
@@ -143,6 +159,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="RaceDBDataSet.xsc">
+      <DependentUpon>RaceDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RaceDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RaceDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RaceDBDataSet.xss">
+      <DependentUpon>RaceDBDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -40,5 +40,10 @@ namespace RaceApp
             GroupForm groupForm = new GroupForm();
             groupForm.ShowDialog();
         }
+
+        private void buttonDistance_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -43,9 +43,10 @@
             // buttonComp
             // 
             this.buttonComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonComp.Location = new System.Drawing.Point(12, 21);
+            this.buttonComp.Location = new System.Drawing.Point(16, 26);
+            this.buttonComp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonComp.Name = "buttonComp";
-            this.buttonComp.Size = new System.Drawing.Size(213, 34);
+            this.buttonComp.Size = new System.Drawing.Size(284, 42);
             this.buttonComp.TabIndex = 0;
             this.buttonComp.Text = "Мероприятия";
             this.buttonComp.UseVisualStyleBackColor = true;
@@ -56,8 +57,9 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 450);
+            this.panel1.Size = new System.Drawing.Size(1067, 554);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -70,15 +72,17 @@
             this.panel2.Controls.Add(this.buttonComp);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(237, 450);
+            this.panel2.Size = new System.Drawing.Size(316, 554);
             this.panel2.TabIndex = 1;
             // 
             // buttonSettings
             // 
-            this.buttonSettings.Location = new System.Drawing.Point(12, 405);
+            this.buttonSettings.Location = new System.Drawing.Point(16, 498);
+            this.buttonSettings.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonSettings.Name = "buttonSettings";
-            this.buttonSettings.Size = new System.Drawing.Size(213, 34);
+            this.buttonSettings.Size = new System.Drawing.Size(284, 42);
             this.buttonSettings.TabIndex = 2;
             this.buttonSettings.Text = "Настройки ридеров";
             this.buttonSettings.UseVisualStyleBackColor = true;
@@ -86,9 +90,10 @@
             // buttonTiming
             // 
             this.buttonTiming.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonTiming.Location = new System.Drawing.Point(12, 249);
+            this.buttonTiming.Location = new System.Drawing.Point(16, 306);
+            this.buttonTiming.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonTiming.Name = "buttonTiming";
-            this.buttonTiming.Size = new System.Drawing.Size(213, 34);
+            this.buttonTiming.Size = new System.Drawing.Size(284, 42);
             this.buttonTiming.TabIndex = 2;
             this.buttonTiming.Text = "Тайминг";
             this.buttonTiming.UseVisualStyleBackColor = true;
@@ -96,9 +101,10 @@
             // buttonTeams
             // 
             this.buttonTeams.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonTeams.Location = new System.Drawing.Point(12, 192);
+            this.buttonTeams.Location = new System.Drawing.Point(16, 236);
+            this.buttonTeams.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonTeams.Name = "buttonTeams";
-            this.buttonTeams.Size = new System.Drawing.Size(213, 34);
+            this.buttonTeams.Size = new System.Drawing.Size(284, 42);
             this.buttonTeams.TabIndex = 2;
             this.buttonTeams.Text = "Команды";
             this.buttonTeams.UseVisualStyleBackColor = true;
@@ -106,19 +112,22 @@
             // buttonDistance
             // 
             this.buttonDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonDistance.Location = new System.Drawing.Point(12, 134);
+            this.buttonDistance.Location = new System.Drawing.Point(16, 165);
+            this.buttonDistance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonDistance.Name = "buttonDistance";
-            this.buttonDistance.Size = new System.Drawing.Size(213, 34);
+            this.buttonDistance.Size = new System.Drawing.Size(284, 42);
             this.buttonDistance.TabIndex = 2;
             this.buttonDistance.Text = "Дистанции";
             this.buttonDistance.UseVisualStyleBackColor = true;
+            this.buttonDistance.Click += new System.EventHandler(this.buttonDistance_Click);
             // 
             // buttonGroups
             // 
             this.buttonGroups.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonGroups.Location = new System.Drawing.Point(12, 77);
+            this.buttonGroups.Location = new System.Drawing.Point(16, 95);
+            this.buttonGroups.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonGroups.Name = "buttonGroups";
-            this.buttonGroups.Size = new System.Drawing.Size(213, 34);
+            this.buttonGroups.Size = new System.Drawing.Size(284, 42);
             this.buttonGroups.TabIndex = 2;
             this.buttonGroups.Text = "Группы";
             this.buttonGroups.UseVisualStyleBackColor = true;
@@ -126,10 +135,11 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainForm";
             this.Text = "RaceApp";
             this.panel1.ResumeLayout(false);

@@ -1,12 +1,9 @@
-﻿using RaceApp;
-using System;
+﻿using System;
 using System.Windows.Forms;
 using System.Linq;
 using System.Drawing;
-using System.Collections.Generic;
-using System.Runtime.Remoting.Contexts;
 
-namespace WindowsFormsApp1
+namespace RaceApp
 {
     public partial class GroupForm : Form
     {
@@ -110,6 +107,62 @@ namespace WindowsFormsApp1
             {
                 RefreshGroup();
             }
+        }
+
+        private void buttonDeleteAll_Click(object sender, EventArgs e)
+        {
+            if (CheckDataGrid.CheckDataGridForEmty(dataGridViewGroup))
+            {
+                return;
+            }
+
+            if (MessageBox.Show("Вы действительно хотите удалить ВСЕ записи?", "Удаление записей",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            {
+                using (var context = new MyDbContext())
+                {
+                    context.Groups.RemoveRange(context.Groups);
+                    context.SaveChanges();
+                }
+                RefreshGroup();
+            }
+        }        
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            if (CheckDataGrid.CheckDataGridForEmty(dataGridViewGroup))
+            {
+                return;
+            }
+
+            if (MessageBox.Show("Вы действительно хотите удалить запись?", "Удаление записей",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            {
+                using (var context = new MyDbContext())
+                {
+                    var group = context.Set<Group>().Find(dataGridViewGroup.CurrentRow.Cells["Id"].Value);
+
+                    if (group != null)
+                    {
+                        context.Set<Group>().Remove(group);
+                        context.SaveChanges();
+                    }
+                }
+                RefreshGroup();
+            }
+        }
+
+        private void dataGridViewGroup_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+            {
+                buttonDelete_Click(sender, e);
+            }
+        }
+
+        private void dataGridViewGroup_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            buttonEdit_Click(sender, e);
         }
     }
 }
