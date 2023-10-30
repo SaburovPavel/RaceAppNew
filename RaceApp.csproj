@@ -62,6 +62,12 @@
     <Compile Include="AddCompForm.Designer.cs">
       <DependentUpon>AddCompForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddDistance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDistance.Designer.cs">
+      <DependentUpon>AddDistance.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddGroupForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     <Compile Include="User.cs" />
     <EmbeddedResource Include="AddCompForm.resx">
       <DependentUpon>AddCompForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDistance.resx">
+      <DependentUpon>AddDistance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddGroupForm.resx">
       <DependentUpon>AddGroupForm.cs</DependentUpon>

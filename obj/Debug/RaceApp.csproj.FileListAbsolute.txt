@@ -67,3 +67,4 @@ C:\Repos\RaceAppNew\bin\Debug\RaceApp.exe
 C:\Repos\RaceAppNew\bin\Debug\RaceApp.pdb
 C:\Repos\RaceAppNew\obj\Debug\RaceApp.exe
 C:\Repos\RaceAppNew\obj\Debug\RaceApp.pdb
+C:\Repos\RaceAppNew\obj\Debug\RaceApp.AddDistance.resources
