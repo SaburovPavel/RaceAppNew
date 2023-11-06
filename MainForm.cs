@@ -38,5 +38,11 @@ namespace RaceApp
             DistanceForm groupForm = new DistanceForm();
             groupForm.ShowDialog();
         }
+
+        private void buttonTiming_Click(object sender, EventArgs e)
+        {
+            TimingForm timingForm = new TimingForm();
+            timingForm.Show();
+        }
     }
 }

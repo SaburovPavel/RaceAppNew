@@ -68,3 +68,5 @@ C:\Repos\RaceAppNew\bin\Debug\RaceApp.pdb
 C:\Repos\RaceAppNew\obj\Debug\RaceApp.exe
 C:\Repos\RaceAppNew\obj\Debug\RaceApp.pdb
 C:\Repos\RaceAppNew\obj\Debug\RaceApp.AddDistance.resources
+C:\Repos\RaceAppNew\obj\Debug\RaceApp.TimingForm.resources
+C:\Repos\RaceAppNew\obj\Debug\RaceApp.AddDistToComp.resources

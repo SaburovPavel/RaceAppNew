@@ -85,13 +85,16 @@
             this.dataGridViewDistance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDistance.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewDistance.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewDistance.MultiSelect = false;
             this.dataGridViewDistance.Name = "dataGridViewDistance";
             this.dataGridViewDistance.ReadOnly = true;
             this.dataGridViewDistance.RowHeadersWidth = 51;
             this.dataGridViewDistance.RowTemplate.Height = 24;
+            this.dataGridViewDistance.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewDistance.Size = new System.Drawing.Size(996, 499);
             this.dataGridViewDistance.TabIndex = 0;
             this.dataGridViewDistance.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewDistance_CellMouseDoubleClick);
+            this.dataGridViewDistance.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dataGridViewDistance_DataBindingComplete);
             // 
             // panel4
             // 
@@ -125,6 +128,7 @@
             this.buttonDeleteAll.TabIndex = 3;
             this.buttonDeleteAll.Text = "Удалить все";
             this.buttonDeleteAll.UseVisualStyleBackColor = true;
+            this.buttonDeleteAll.Click += new System.EventHandler(this.buttonDeleteAll_Click);
             // 
             // buttonDelete
             // 
@@ -134,6 +138,7 @@
             this.buttonDelete.TabIndex = 2;
             this.buttonDelete.Text = "Удалить";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonEdit
             // 
